@@ -1,0 +1,12 @@
+{
+    "name": "remco/pronamic-sendgrid-html2text",
+    "authors": [
+        {
+            "name": "Remco Tolsma",
+            "email": "info@remcotolsma.nl"
+        }
+    ],
+    "require": {
+        "html2text/html2text": "^4.0"
+    }
+}
