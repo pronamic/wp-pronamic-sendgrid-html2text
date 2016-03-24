@@ -18,7 +18,7 @@ if ( 'text/plain' !== $content_type ) {
 }
 ```
 
-Source: https://github.com/sendgrid/wordpress/blob/master/lib/sendgrid/sendgrid-wp-mail.php#L301-L304
+Source: https://github.com/sendgrid/wordpress/blob/master/lib/sendgrid/sendgrid-wp-mail.php#L307-L310
 
 ## Links
 
