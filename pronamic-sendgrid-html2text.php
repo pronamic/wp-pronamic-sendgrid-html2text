@@ -24,7 +24,8 @@ GitHub URI: https://github.com/pronamic/wp-pronamic-sendgrid-html2text
 require_once plugin_dir_path( __FILE__ ) . 'vendor/autoload.php';
 
 /**
- * Filter
+ * Convert HTML 2 text with the Html2Text library.
+ * @see https://packagist.org/packages/html2text/html2text
  */
 function pronamic_sendgrid_html2text( $message ) {
 	$html = new \Html2Text\Html2Text( $message );
@@ -34,4 +35,4 @@ function pronamic_sendgrid_html2text( $message ) {
 	return $message;
 }
 
-add_filter( 'pronamic_sendgrid_text_message', 'pronamic_sendgrid_html2text' );
+add_filter( 'sendgrid_mail_text', 'pronamic_sendgrid_html2text' );
